@@ -1,0 +1,83 @@
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:#f4f6f9;
+}
+
+.login-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#2563eb;
+}
+
+.login-box{
+width:400px;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:240px;
+height:100vh;
+background:#0f172a;
+padding:20px;
+}
+
+.sidebar h3{
+color:white;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.sidebar a:hover{
+background:#2563eb;
+}
+
+.content{
+margin-left:260px;
+padding:40px;
+}
+
+.stat-card{
+padding:40px;
+text-align:center;
+border:none;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+h3{
+font-weight:700;
+}
+table{
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.content h1{
+font-weight:700;
+margin-bottom:30px;
+}
+
+.form-control{
+border-radius:12px;
+}
+
+.form-select{
+border-radius:10px;
+}
