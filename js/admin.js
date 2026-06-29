@@ -277,3 +277,18 @@ link.download="appointments.csv";
 link.click();
 
 }
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+        card.style.background = "#0d6efd";
+        card.style.color = "#fff";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.background = "#fff";
+        card.style.color = "#000";
+    });
+
+});
