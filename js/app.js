@@ -58,3 +58,22 @@ contactForm.addEventListener("submit", function(e){
 });
 
 }
+const search=document.getElementById("searchDepartment");
+
+if(search){
+
+search.addEventListener("keyup",function(){
+
+const value=this.value.toLowerCase();
+
+document.querySelectorAll(".department-card").forEach(card=>{
+
+card.style.display=card.innerText.toLowerCase().includes(value)
+? "block"
+: "none";
+
+});
+
+});
+
+}
