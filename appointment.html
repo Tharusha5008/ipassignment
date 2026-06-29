@@ -122,6 +122,33 @@ this.reset();
 });
 
 </script>
+<section class="appointment-form">
+
+    <h2>Book an Appointment</h2>
+
+    <form id="appointmentForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Appointment</button>
+
+    </form>
+
+</section>
 
 </body>
 

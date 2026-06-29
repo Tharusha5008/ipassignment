@@ -77,3 +77,18 @@ card.style.display=card.innerText.toLowerCase().includes(value)
 });
 
 }
+const form = document.getElementById("appointmentForm");
+
+if(form){
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert("Appointment Booked Successfully!");
+
+this.reset();
+
+});
+
+}
