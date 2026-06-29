@@ -292,3 +292,32 @@ cards.forEach(card => {
     });
 
 });
+const loginForm = document.getElementById("loginForm");
+const showPassword = document.getElementById("showPassword");
+const password = document.getElementById("password");
+
+if(showPassword){
+    showPassword.addEventListener("change", function(){
+        password.type = this.checked ? "text" : "password";
+    });
+}
+
+if(loginForm){
+
+    loginForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if(username === "admin" && password === "admin123"){
+            alert("Login Successful!");
+            window.location.href = "dashboard.html";
+        }else{
+            alert("Invalid Username or Password");
+        }
+
+    });
+
+}
