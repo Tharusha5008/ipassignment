@@ -24,3 +24,22 @@ clearInterval(counter);
 animateValue("doctorCount",25);
 animateValue("patientCount",500);
 animateValue("appointmentCount",120);
+const doctorSearch = document.getElementById("doctorSearch");
+
+if(doctorSearch){
+
+doctorSearch.addEventListener("keyup", function(){
+
+let value = this.value.toLowerCase();
+
+document.querySelectorAll(".doctor-card").forEach(card=>{
+
+card.style.display = card.innerText.toLowerCase().includes(value)
+? "block"
+: "none";
+
+});
+
+});
+
+}
