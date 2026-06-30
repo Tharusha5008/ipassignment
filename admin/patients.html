@@ -61,6 +61,52 @@ placeholder="Search Patient">
 </div>
 
 <script src="../js/admin.js"></script>
+<div class="patient-management">
 
+    <h2>Patient Management</h2>
+
+    <input type="text" id="searchPatient" placeholder="Search Patient...">
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="patientTable">
+
+            <tr>
+                <td>001</td>
+                <td>John Smith</td>
+                <td>35</td>
+                <td>Male</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Sarah Lee</td>
+                <td>28</td>
+                <td>Female</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
 </body>
 </html>

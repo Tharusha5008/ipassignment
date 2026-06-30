@@ -321,3 +321,23 @@ if(loginForm){
     });
 
 }
+
+const searchPatient = document.getElementById("searchPatient");
+
+if(searchPatient){
+
+searchPatient.addEventListener("keyup", function(){
+
+    let value = this.value.toLowerCase();
+
+    document.querySelectorAll("#patientTable tr").forEach(row=>{
+
+        row.style.display = row.innerText.toLowerCase().includes(value)
+        ? ""
+        : "none";
+
+    });
+
+});
+
+}
