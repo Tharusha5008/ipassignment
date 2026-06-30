@@ -37,7 +37,7 @@ box-shadow:0 15px 30px rgba(0,0,0,.2);
 .hero{
     height:80vh;
     background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("../images/hospital.jpg") center/cover;
+    url("https://i.pinimg.com/736x/c2/b6/ba/c2b6ba2bb77c88ecf8e8db8a528b422b.jpg") center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
